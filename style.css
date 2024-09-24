@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pacifico", cursive, sans-serif;
+
+}
+
+body {
+    background-color: #96C5B0;
+}
+
+header {
+    background-color: #C33149;
+    padding: 0px 15px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+header>h1 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #700907;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+    width: 100%;
+    max-width: 270px;
+    min-height: calc(100dvh - 55px);
+    background-color: #61A888;
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.3);
+    padding: 30px 20px 20px;
+}
+
+.canvas {
+    width: 100%;
+    max-width: 720px;
+    aspect-ratio: 1/1;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.row {
+    display: flex;
+    gap: 2px;
+}
+
+.pixel {
+    width: 100%;
+    background-color: #6c9d87;
+    aspect-ratio: 1/1;
+}
+
+.option-title {
+    color: #274437;
+    font-size: 1rem;
+    font-weight: 600;
+    display: block;
+}
+
+.input-size {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #274437;
+    outline: none;
+    margin: 10px 0 20px;
+    background-color: #96C5B0;
+}
+
+.input-color {
+    appearance: none;
+    width: 42px;
+    height: 45px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 5px 0px 15px;
+}
+
+.input-color::-moz-color-swatch {
+    border-radius: 100%;
+    border: 2px solid #EBEBEB;
+}
+
+.input-color::-webkit-color-swatch {
+    border-radius: 100%;
+    border: 2px solid #EBEBEB;
+}
+
+.used-colors {
+    margin: 10px 0px;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.button-color {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-save {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin-top: 20px;
+    background-color: #96C5B0;
+    cursor: pointer;
+}
+
+.button-save:hover {
+    background-color: #6c9d87;
+}
+
+.resize {
+    height: 720px;
+    width: 3px;
+    background-color: #61A888;
+    margin-top: 20px;
+    cursor: col-resize;
+}
